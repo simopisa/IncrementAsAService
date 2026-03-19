@@ -320,27 +320,35 @@ This library ships with **14 interfaces** because good architecture starts with 
 ## FAQ
 
 **Q: Is this faster than `n++`?**
+
 A: No. But it's more *observable*.
 
 **Q: Why does the Monte Carlo strategy exist?**
+
 A: Why not?
 
 **Q: Why is there a superstition validator?**
+
 A: Safety first. Not every number deserves to be incremented without a warning.
 
 **Q: What's the PremiumExperienceMiddleware for?**
+
 A: Studies show that users trust slower software more. I'm just helping you build trust.
 
 **Q: Why is the Justification field optional?**
+
 A: It's optional in the code, but your tech lead will ask about it in the PR review anyway.
 
 **Q: Can I use this in production?**
+
 A: You *shouldn't*. But technically, yes. Everything is async, thread-safe, and fully tested by the voices in my head.
 
 **Q: How many lines of code does it take to add 1 to a number?**
+
 A: Maybe too many. But each one is essential.
 
 **Q: What's the ROI?**
+
 A: Incalculable. Literally. I tried to calculate it and the calculator needed IncrementAsAService to add 1 to the result, causing an infinite loop.
 
 ---
