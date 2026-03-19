@@ -1,4 +1,4 @@
-# 🚀 IncrementAsAService™ (IaaS)
+# 🚀 IncrementAsAService (IaaS)
 
 ### Enterprise-Grade Number Incrementation Platform
 
@@ -24,7 +24,7 @@ No validation. No audit trail. No caching. No rollback support. No telemetry. No
 
 What happens when that `++` fails at 3 AM in production? Who incremented that number? *Why* did they increment it? Was the number even worthy of being incremented? Did anyone check if it was cursed?
 
-**IncrementAsAService™** answers all of these questions and more, across many lines of meticulously over-engineered C#.
+**IncrementAsAService** answers all of these questions and more, across many lines of meticulously over-engineered C#.
 
 ---
 
@@ -159,7 +159,7 @@ Before a number is incremented, it must pass four validators:
 
 | Validator | What it checks | Example rejection |
 |-----------|----------------|-------------------|
-| **OverflowGuard** | `value < int.MaxValue` | "Consider upgrading to IaaS.BigInteger.Enterprise™" |
+| **OverflowGuard** | `value < int.MaxValue` | "Consider upgrading to IaaS.BigInteger.Enterprise" |
 | **NegativityGuard** | Is the number "too negative"? | "This number needs therapy, not incrementing." |
 | **SuperstitionGuard** | Cursed numbers (13, 666, 4, etc.) | Issues a warning. Proceeds with caution. |
 | **RateLimiter** | Too many increments/minute? | "Please wait and reflect on whether you really need all those +1s." |
@@ -308,7 +308,7 @@ This library ships with **14 interfaces** because good architecture starts with 
 | `IReversibleIncrementStrategy<T>` | Can also subtract 1 |
 | `IIncrementValidator<T>` | Decides if the number deserves it |
 | `IIncrementObserver` | Watches it happen |
-| `IIncrementMiddleware<T>` | Sits in the middle |
+| `IIncremeniddleware<T>` | Sits in the middle |
 | `IIncrementPolicyEngine<T>` | Evaluates business rules |
 | `IIncrementConflictResolver<T>` | When strategies disagree |
 | `IIncrementCache<T>` | Remembers previous increments |
@@ -355,7 +355,7 @@ A: Incalculable. Literally. I tried to calculate it and the calculator needed In
 
 ## Performance Benchmarks
 
-| Operation | `n++` | IncrementAsAService™ |
+| Operation | `n++` | IncrementAsAService |
 |-----------|-------|----------------------|
 | Adding 1 to 5 | 0.0001ms | 52ms |
 | Adding 1 to 13 (cursed) | 0.0001ms | 53ms + warning |
@@ -394,5 +394,5 @@ You can use this code for anything. I'm not responsible for the looks your cowor
 ---
 
 <p align="center">
-<i>IncrementAsAService™ — One operation. Infinite enterprise value.</i>
+<i>IncrementAsAService — One operation. Infinite enterprise value.</i>
 </p>
